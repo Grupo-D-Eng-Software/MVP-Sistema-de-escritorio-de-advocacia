@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Status Bar -->
+    <div class="status-bar">
+      
+      <div class="status-icons">
+        
+      </div>
+    </div>
+    
+    <!-- Back button -->
+    <div class="nav-button">
+      <button class="back-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <h1>Cadastro de Usuário</h1>
+      <!-- Imagens de referência do cadastro -->
+      <div class="reference-images">
+        
+      </div>
+    </header>
+
+    <!-- Form Content -->
+    <div class="form-container">
+      <form id="userForm">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+          <div class="error-msg">Campo obrigatório</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="nomeSocial">Nome Social</label>
+          <input type="text" id="nomeSocial" name="nomeSocial" placeholder="Nome social">
+        </div>
+        
+        <div class="form-group">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+          <div class="error-msg">Campo obrigatório</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="inscricaoOAB">Inscrição na OAB</label>
+          <input type="text" id="inscricaoOAB" name="inscricaoOAB" placeholder="Número da inscrição na OAB">
+        </div>
+        
+        <div class="form-group">
+          <label for="genero">Gênero</label>
+          <select id="genero" name="genero" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="nao-informar">Prefiro não informar</option>
+          </select>
+          <div class="error-msg">Campo obrigatório</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subsecao">Subseção</label>
+          <input type="text" id="subsecao" name="subsecao" placeholder="Número da subseção">
+        </div>
+        
+        <div class="form-group">
+          <label for="telefoneProfissional">Telefone Profissional</label>
+          <input type="tel" id="telefoneProfissional" name="telefoneProfissional" placeholder="(00) 00000-0000">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+          <div class="error-msg">Campo obrigatório</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="enderecoProfissional">Endereço Profissional</label>
+          <input type="text" id="enderecoProfissional" name="enderecoProfissional" placeholder="Rua, nº, bairro - cidade - UF">
+        </div>
+        
+        <div class="form-group">
+          <label for="senha">Senha (no mínimo 6 caracteres)</label>
+          <input type="password" id="senha" name="senha" placeholder="******" required>
+          <div class="error-msg">Campo obrigatório</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirmarSenha">Confirmar senha</label>
+          <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="******" required>
+          <div class="error-msg">Campo obrigatório</div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Cadastrar</button>
+          <button type="reset" class="btn-secondary">Limpar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
