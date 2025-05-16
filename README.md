@@ -4,10 +4,34 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 
 ## 📌 Funcionalidades Implementadas
 
-- Cadastro de clientes com dados pessoais e anexos de documentos (CPF, RG, comprovante, contratos etc.). (Adão Eduardo)
+### Cadastro de clientes. (Adão Eduardo)
+#### 📝 Formulário Inteligente
+- Validação em tempo real de campos obrigatórios
+- Máscaras automáticas para CPF e telefone
+- Upload de múltiplos documentos (PDF/JPG/PNG)
+
+#### 🔍 Busca Avançada
+- Pesquisa por nome, CPF ou e-mail
+- Resultados instantâneos na tabela
+- Botão para limpar filtros
+
+#### 📂 Gerenciamento de Documentos
+- Visualização em modal organizada
+- Download individual de arquivos
+- Exibição de tipo e tamanho dos documentos
+
+#### 🛠️ Ferramentas de Gestão
+- Exclusão segura com confirmação
+- Persistência de dados no navegador
+- Tabela responsiva e ordenável
+
+#### 🎨 Design
+- Cores profissionais (#3C4C6C como primária)
+- Tipografia Merriweather/Montserrat
+- Totalmente responsivo para mobile
 
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Frontend:** JS / HTML / CSS
 
