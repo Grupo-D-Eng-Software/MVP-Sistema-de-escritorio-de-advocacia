@@ -42,11 +42,12 @@ Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste p
 
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
   Para a interatividade, validação de formulários e simulação de requisições ao backend.
+  
 
-
-# Equipe:
-## Grupo D:
-### Adão Eduardo Gomes de Oliveira - 2023010692
+## Equipe
+| Equipe     | Grupo | Integrante                                  | Matrícula   |
+|------------|--------|---------------------------------------------|-------------|
+| Engenharia de Software | D      | Adão Eduardo Gomes de Oliveira           | 2023010692 |
 
 
 ### Agradecimentos
