@@ -25,6 +25,9 @@
     
     <div class="terms">
       <p>Se você criar uma nova conta, os <a href="#" id="termsLink">Termos e Condições</a> e a <a href="#" id="privacyLink">Política de Privacidade</a> serão aplicados.</p>
+      <p class="cadastro-link" style="font-weight: bold; color: #0056b3; font-size: 1.1em; margin-top: 10px; text-align: center;">
+        Não tem uma conta? <a href="../Cadastro-Usuarios/index.html" style="color: #fff; background: #0056b3; padding: 6px 16px; border-radius: 6px; text-decoration: none; font-weight: bold;">Cadastre-se</a>
+      </p>
     </div>
 
     <!-- Modal para email -->
@@ -37,6 +40,11 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
           </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <a href="../recuperacao-senha/scr/recuperacao.html" class="recuperar-senha-link">Esqueceu a senha?</a>
           <button type="submit" class="btn btn-primary">Continuar</button>
         </form>
       </div>
@@ -52,6 +60,11 @@
             <label for="phone">Número de Telefone</label>
             <input type="tel" id="phone" name="phone" required>
           </div>
+          <div class="form-group">
+            <label for="passwordPhone">Senha</label>
+            <input type="password" id="passwordPhone" name="passwordPhone" required>
+          </div>
+          <a href="../recuperacao-senha/scr/recuperacao.html" class="recuperar-senha-link">Esqueceu a senha?</a>
           <button type="submit" class="btn btn-primary">Continuar</button>
         </form>
       </div>

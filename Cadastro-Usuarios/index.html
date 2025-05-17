@@ -105,7 +105,7 @@
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="btn-primary">Cadastrar</button>
+          <button type="submit" class="btn-primary" id="btnCadastrar">Cadastrar</button>
           <button type="reset" class="btn-secondary">Limpar</button>
         </div>
       </form>
@@ -113,5 +113,12 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    document.getElementById('userForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Aqui você pode adicionar validação extra se necessário
+      window.location.href = '../menu/index.html';
+    });
+  </script>
 </body>
 </html>
