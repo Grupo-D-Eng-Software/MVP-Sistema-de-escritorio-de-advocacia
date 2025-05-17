@@ -97,7 +97,7 @@ function finalizar(){
         } 
         else{             
             alert("Nova senha salva com sucesso!");
-            window.location.href = "recuperacao.html";           
+            window.location.href = "../../../login/index.html";           
            
             }
        
