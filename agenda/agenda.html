@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Jurídica</title>
+  <link rel="stylesheet" href="agenda.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="top-bar">
+      <div class="title-area">
+        <h1>Agenda Jurídica</h1>
+      </div>
+      <div class="avatar-area">
+        <img class="avatar" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwm1Ss5q10zkRps1aZWWf3fFCW2k3chwqsnhjt1dZ8bHvW8lBk" alt="Avatar Mia">
+        <span class="avatar-label">Mia (IA)</span>
+      </div>
+    </header>
+
+    <section class="calendar-section">
+      <div class="calendar-box">
+        <div class="calendar-header">
+          <button onclick="changeMonth(-1)"><i class="fas fa-chevron-left"></i></button>
+          <div id="monthYear"></div>
+          <button onclick="changeMonth(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+    </section>
+
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar" oninput="filterActivities(this.value)">
+      <button><i class="fas fa-sliders-h"></i></button>
+    </div>
+
+    <div class="activities-header">
+      <h3>Atividades</h3>
+      <button onclick="openModal()"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <div id="activityList"></div>
+  </div>
+
+  <div id="modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.3); justify-content:center; align-items:center;">
+    <div style="background:white; padding:20px; border-radius:10px; max-width:90%; width:300px;">
+      <h3>Nova Atividade</h3>
+      <input type="text" id="titleInput" placeholder="Título" style="width:100%; padding:8px; margin-bottom:8px;">
+      <input type="time" id="timeInput" style="width:100%; padding:8px; margin-bottom:8px;">
+      <button onclick="addActivity()" style="width:100%; padding:10px; background:#2b446c; color:white; border:none; border-radius:6px;">Salvar</button>
+      <button onclick="closeModal()" style="width:100%; margin-top:8px; padding:10px; border:none; background:#ccc; border-radius:6px;">Cancelar</button>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <div class="nav-item">
+      <a href="../menu/index.html"><i class="fas fa-home"></i></a>
+      <span class="dot"></span>
+    </div>
+    <div class="nav-item">
+      <a href="mensagens.html"><i class="fas fa-comment"></i></a>
+    </div>
+    <div class="nav-item active">
+      <a href="agenda.html"><i class="fas fa-calendar-alt"></i></a>
+    </div>
+    <div class="nav-item">
+      <a href="perfil.html"><i class="fas fa-user"></i></a>
+    </div>
+  </nav>
+
+  <script>
+    function openModal() {
+      document.getElementById("modal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
