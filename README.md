@@ -117,6 +117,38 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 
 - Layout responsivo e otimizado para dispositivos móveis e tablets
 
+### Recuperação de senha de login (Eudo)
+
+Essa funcionalidade permite ao usuário recuperar a senha se login. O processo de recuperação
+consiste em 3 etapas:
+
+#### Etapa 01:
+- O usuário insere seu E-mail de login;
+- No campo de E-mail ocorre (por JS) a validação do E-mail inserido 
+- Não foi implementado a validação para confirmar se o E-mail inserido esta no BD;
+- Após validação do E-mail, é enviado um código de 6 digitos para o Email (simulação);
+- O código pode ser visualizado no console do navegador.
+
+#### Etapa 02:
+- Com o código em mãos, o usuário deverar inseri-lo no campo com 6 inputs;
+- Ocorre validação nesses campos para confirmar se foram preenchidos;
+- Também ocorre validação para confirmar se o código inserido é igual ao enviado (console);
+- Após essas validações, o usuário é encaminhado para 3 página.
+
+#### Etapa 03:
+- Na etapa 3 ocorre o cadastro da nova senha;
+- O usuário deve seguir as orientações de senhas disponiveis na pagina;
+- Ocorre validação para verificação da tamanho da senha;
+- Ocorre validação para verificação das combinações de numeros, simbolos, e letras (A-z);
+
+#### Boas práticas:
+- Uso corretos das tags HTML;
+- Separação de HTML, CSS e JavaScript;
+- Link para o scrip em JS no final do Body;
+- Uso de branchs para cada funcionalidade implementadas;
+- Descrição clara de commits;
+- Validações de campos de inputs;
+- Mensagens de feedback para o usuário.
 
 ## Tecnologias Utilizadas
 Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste projeto:
