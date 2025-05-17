@@ -51,5 +51,5 @@ Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste p
 
 
 ### Agradecimentos
-Agradecemos ao professor **Ricardo Vilela** e à instituição **Univisersidade Federal do Cariri** por proporcionar o conhecimento e a oportunidade de desenvolver este projeto. Também agradecemos a todos que contribuíram direta ou indiretamente para a realização deste trabalho.
+Agradecemos ao professor **Ricardo Vilela** e à instituição **Universidade Federal do Cariri** por proporcionar o conhecimento e a oportunidade de desenvolver este projeto. Também agradecemos a todos que contribuíram direta ou indiretamente para a realização deste trabalho.
 
