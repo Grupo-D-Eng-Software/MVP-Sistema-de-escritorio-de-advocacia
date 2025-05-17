@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Cliente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Perfil do Cliente</h1>
+      <a href="index.html" class="btn">Voltar</a>
+    </header>
+
+    <div class="card" id="clientProfile">
+      <!-- Os dados serão preenchidos via JavaScript -->
+      <div class="profile-header">
+        <h2 id="clientName"></h2>
+        <div class="profile-actions">
+          <button id="editProfile" class="btn btn-primary">Editar Perfil</button>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h3>Dados Pessoais</h3>
+        <div class="profile-row">
+          <span class="profile-label">CPF:</span>
+          <span id="clientCpf"></span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-label">RG:</span>
+          <span id="clientRg"></span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-label">Nascimento:</span>
+          <span id="clientNascimento"></span>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h3>Contato</h3>
+      <div class="profile-row">
+      <span class="profile-label">Telefone:</span>
+      <span id="clientTelefone"></span>
+      </div>
+      <div class="profile-row">
+       <span class="profile-label">E-mail:</span>
+      <span id="clientEmail"></span>
+      </div>
+        <div class="profile-row">
+        <span class="profile-label">Endereço:</span>
+        <span id="clientEndereco"></span>
+      </div>
+      </div>
+      <div class="profile-section">
+      <h3>Processos</h3>
+      <div class="profile-row">
+      <span class="profile-label">Link do Processo:</span>
+        <a id="clientProcesso" target="_blank" class="processo-link"></a>
+      </div>
+    </div>
+
+      <div class="profile-section">
+        <h3>Documentos</h3>
+        <div id="clientDocuments" class="documents-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
