@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperação de Senha</title>
+  <link rel="stylesheet" href="/recuperacao-senha/styles/styles.css">
+</head>
+<body>
+
+  <header>
+      <h1>Recuperação de Senha</h1>
+  </header>
+
+  <!-- Tela 1: Entrada do E-mail -->
+  <div class="tela" id="tela-email">
+    <h2>Informe seu endereço de E-mail cadastrado</h2>
+    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+    <button onclick="irParaCodigo()">Continuar</button>
+    <p class="etapa">Etapa 1 de 3</p>
+  </div>
+
+  <!-- Tela 2: Verificação de Código -->
+  <div class="tela" id="tela-codigo" style="display: none;">
+    <h2>Digite o código de 6 dígitos</h2>
+    <div class="campo-cod">
+      <input type="text" maxlength="1" id="codigo1" readonly>
+      <input type="text" maxlength="1" id="codigo2" readonly>
+      <input type="text" maxlength="1" id="codigo3" readonly>
+      <input type="text" maxlength="1" id="codigo4" readonly>
+      <input type="text" maxlength="1" id="codigo5" readonly>
+      <input type="text" maxlength="1" id="codigo6" readonly>
+    </div>
+    <div class="teclado">
+      <button class="numero" onclick="inserirDigito('1')">1</button>
+      <button class="numero" onclick="inserirDigito('2')">2</button>
+      <button class="numero" onclick="inserirDigito('3')">3</button>
+      <button class="n-numero" onclick="removerDigito()"><img src="/recuperacao-senha/assets/Backspace.svg"></button>
+      <button class="numero" onclick="inserirDigito('4')">4</button>
+      <button class="numero" onclick="inserirDigito('5')">5</button>
+      <button class="numero" onclick="inserirDigito('6')">6</button>
+      <button class="n-numero" onclick="verificarCodigo()">OK</button>
+      <button class="numero" onclick="inserirDigito('7')">7</button>
+      <button class="numero" onclick="inserirDigito('8')">8</button>
+      <button class="numero" onclick="inserirDigito('9')">9</button>
+      <button class="n-numero" >.-</button>
+      <button class="n-numero" ></button>
+      <button class="numero" onclick="inserirDigito('0')">0</button>
+      <button class="n-numero" ></button>
+      <button class="n-numero" ><img src="/recuperacao-senha/assets/Setting.svg"></button>
+    </div>
+    
+    <button  onclick="verificarCodigo()">Continuar</button>
+    
+    <p class="etapa">Etapa 2 de 3</p>
+
+  </div>
+
+  
+
+  <!-- Tela 3: Nova Senha -->
+  <div class="tela" id="tela-nova-senha" style="display: none;">
+    <div class="rotulo-senha">Informe a nova Senha</div>
+    <input id="input1-senha" type="password" placeholder="Mínimo de 8 caracteres">
+    <div class="rotulo-senha">Confirme a nova Senha</div>
+    <input id="input2-senha" type="password" placeholder="Mínimo de 8 caracteres">
+    <div class="instrucoes-senha">
+      <p>Sua senha deve conter:</p>
+      <ul>
+        <li>Mínimo de 8 caracteres</li>
+        <li>Letras de A-z</li>
+        <li>Caracteres especiais (@,#,_,%,&)</li>
+        <li>Numeros (0-9)</li>
+      </ul>
+    </div>
+    <button onclick="finalizar()">Finalizar</button>
+    <p class="etapa">Etapa 3 de 3</p>
+  </div>
+
+ <script src="/recuperacao-senha/scripts/scripts.js"></script>
+</body>
+</html>

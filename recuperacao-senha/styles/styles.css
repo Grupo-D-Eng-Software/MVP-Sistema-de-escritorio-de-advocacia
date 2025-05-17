@@ -1,0 +1,182 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header h1{
+  width: 89.5vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #3C4C6C;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tela {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  width: 88vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 10px; 
+}
+
+.etapa{
+    position: absolute;
+    bottom: 3vh;
+    left: 46vw;
+}
+
+h2 {
+  color: #3C4C6C;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  width: 50%;
+  padding: 10px;  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  
+  margin-bottom: 5px;
+}
+
+input::placeholder{
+    opacity: 50%;
+    font-size: 2.5vh;
+}
+
+button {
+  background-color: #3C4C6C;
+  width: 20vw;
+  height: 7vh;
+  color: #E8E8E8;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0f1e3b;
+}
+.numero{
+    background-color: #ffffff;
+    width: 80%;
+    height: 9.5vh;
+    padding: 0px;
+}
+
+.n-numero{
+    background-color: rgba(199, 196, 196, 1);
+    width: 80%;
+    height: 9.5vh;
+     padding: 0px;
+}
+
+.campo-cod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    margin-bottom: 5vh;
+}
+
+.campo-cod input{
+    width: 4vw;
+    height: 3vh;
+    text-align: center;
+    font-size: 5vh;    
+    padding: auto;
+}
+
+.rotulo-senha{
+    color: rgba(0, 33, 71, 1);
+    width: 58vw;
+    
+    margin-top: 3%;
+    padding-bottom: 5px;
+}
+
+.instrucoes-senha{
+    color: rgba(0, 33, 71, 0.5);
+    font-size: 2vh;
+    text-align: start ;
+    margin-top: 3%;
+    margin-left: 25%;
+    
+}
+
+.instrucoes-senha p{
+    padding: 2px;
+    color: rgba(0, 33, 71, 0.7);
+    font-size: 2.3vh;
+}
+
+.instrucoes-senha li{
+    padding: 2px;
+}
+
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #E2E2E2;
+  width: 40vw;
+  padding-bottom: 15px;
+  align-content: center;
+  place-items: center;
+  margin: 2px auto 0px;
+}
+
+
+
+.teclado button {
+  padding: 15px;
+  font-size: 4vh;
+  font-weight: bolder;
+ /* background-color: #E2E2E2;*/
+  color: #3C4C6C;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.teclado button:hover {
+  background-color: #d0d0d0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3C4C6C;
+  box-shadow: 0 0 5px rgba(60, 76, 108, 0.5);
+}
