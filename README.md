@@ -4,6 +4,16 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 
 ## Funcionalidades Implementadas
 
+### 🔐 Tela de Login. (Adão Eduardo)
+
+#### 📲 **Métodos de Acesso**
+- **Login por Email** com validação de formato
+- **Login por Telefone** com máscara automática `(00) 00000-0000`
+
+#### 📱 **Responsividade**
+- Layout adaptável para mobile
+- Design consistente com o sistema existente
+
 ### Cadastro de clientes. (Adão Eduardo)
 #### 📝 Formulário Inteligente
 - Validação em tempo real de campos obrigatórios
