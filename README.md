@@ -150,6 +150,8 @@ consiste em 3 etapas:
 - Validações de campos de inputs;
 - Mensagens de feedback para o usuário.
 
+
+
 ## Tecnologias Utilizadas
 Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste projeto:
 
@@ -170,6 +172,7 @@ Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste p
 | Engenharia de Software | D      | Alexandra Silva de Paula                 | 2023018832 |
 | Engenharia de Software | D      | Jaine Bento dos Santos                   | 2023009646 |
 | Engenharia de Software | D      | Antonio Harisson Alencar Ferreira        | 2023018770 |
+| Engenharia de Software | D      | Francisco Eudo da Silva                  | 2023011967 |
 
 
 ### Agradecimentos
