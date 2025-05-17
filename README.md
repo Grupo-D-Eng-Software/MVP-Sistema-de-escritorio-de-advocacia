@@ -69,6 +69,45 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 - Tipografia moderna com **Montserrat**  
 - Layout responsivo, adaptado para mobile
 
+#### Cadastro de Usuario (Jaine Bento) 
+
+#### 📝 Formulário Inteligente
+
+- Validação em tempo real de campos obrigatórios (nome, CPF, OAB, e-mail, telefone, senha)
+
+- Máscaras automáticas para CPF, telefone e número da OAB
+
+- Campos específicos para nome social, gênero e áreas de atuação jurídica
+
+#### 🔍 Busca Avançada (a ser implementada na interface principal)
+
+- Pesquisas rápidas por nome, CPF, OAB ou e-mail
+
+- Resultados instantâneos exibidos em tabela
+
+- Filtro de múltiplas áreas de atuação com botão para limpar filtros
+
+#### ⚖️ Dados Profissionais Específicos
+
+- Cadastro completo da inscrição na OAB com identificação da seccional
+
+- Campo para informar a subseção da OAB e endereço profissional
+
+#### 🛠️ Ferramentas de Gestão
+
+- Confirmação de exclusão de dados com segurança
+
+- Campos de senha com validação de mínimo de caracteres
+
+#### 🎨 Design Profissional
+
+- Paleta de cores sóbria e elegante (#3C4C6C como cor principal)
+
+- Tipografia combinando sofisticação (Merriweather nos títulos, Montserrat nos textos)
+
+- Layout responsivo e otimizado para dispositivos móveis e tablets
+
+
 ## Tecnologias Utilizadas
 Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste projeto:
 
@@ -87,7 +126,7 @@ Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste p
 |------------|--------|---------------------------------------------|-------------|
 | Engenharia de Software | D      | Adão Eduardo Gomes de Oliveira           | 2023010692 |
 | Engenharia de Software | D      | Alexandra Silva de Paula                 | 2023018832 |
-
+| Engenharia de Software | D      | Jaine Bento dos Santos                   | 2023009646 |
 
 
 ### Agradecimentos
