@@ -69,7 +69,7 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 - Tipografia moderna com **Montserrat**  
 - Layout responsivo, adaptado para mobile
 
-#### Cadastro de Usuario (Jaine Bento) 
+### Cadastro de Usuario (Jaine Bento) 
 
 #### 📝 Formulário Inteligente
 
