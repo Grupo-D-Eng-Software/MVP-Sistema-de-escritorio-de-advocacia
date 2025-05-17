@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Entrar ou Criar Conta</h1>
+    <p class="subtitle">Selecione seu método preferido para continuar a configuração da sua conta.</p>
+    
+    <div class="login-options">
+      <button id="emailBtn" class="login-btn">
+        <i class="fas fa-envelope"></i> Continuar com Email
+      </button>
+      <button id="phoneBtn" class="login-btn">
+        <i class="fas fa-phone"></i> Continuar com Telefone
+      </button>
+    </div>
+    
+    <div class="terms">
+      <p>Se você criar uma nova conta, os <a href="#" id="termsLink">Termos e Condições</a> e a <a href="#" id="privacyLink">Política de Privacidade</a> serão aplicados.</p>
+    </div>
+
+    <!-- Modal para email -->
+    <div id="emailModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Continuar com Email</h2>
+        <form id="emailForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Continuar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal para telefone -->
+    <div id="phoneModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Continuar com Telefone</h2>
+        <form id="phoneForm">
+          <div class="form-group">
+            <label for="phone">Número de Telefone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Continuar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
