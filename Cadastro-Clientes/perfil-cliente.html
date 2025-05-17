@@ -11,7 +11,9 @@
   <div class="container">
     <header>
       <h1>Perfil do Cliente</h1>
-      <a href="index.html" class="btn">Voltar</a>
+      <a href="index.html" class="btn" title="Voltar">
+        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/back--v1.png" alt="back--v1"/>
+      </a>
     </header>
 
     <div class="card" id="clientProfile">
@@ -66,6 +68,62 @@
         <h3>Documentos</h3>
         <div id="clientDocuments" class="documents-container"></div>
       </div>
+    </div>
+
+    <!-- Formulário de edição do perfil (inicialmente oculto) -->
+    <div class="card" id="editProfileForm" style="display: none;">
+      <form id="formEditarPerfil" enctype="multipart/form-data">
+        <h2>Editar Perfil</h2>
+        <div class="profile-section">
+          <h3>Dados Pessoais</h3>
+          <div class="profile-row">
+            <label for="editNome" class="profile-label">Nome*:</label>
+            <input type="text" id="editNome" name="nome" required />
+          </div>
+          <div class="profile-row">
+            <label for="editCpf" class="profile-label">CPF*:</label>
+            <input type="text" id="editCpf" name="cpf" required />
+          </div>
+          <div class="profile-row">
+            <label for="editRg" class="profile-label">RG*:</label>
+            <input type="text" id="editRg" name="rg" required />
+          </div>
+          <div class="profile-row">
+            <label for="editNascimento" class="profile-label">Nascimento*:</label>
+            <input type="date" id="editNascimento" name="nascimento" required />
+          </div>
+        </div>
+        <div class="profile-section">
+          <h3>Contato</h3>
+          <div class="profile-row">
+            <label for="editTelefone" class="profile-label">Telefone*:</label>
+            <input type="text" id="editTelefone" name="telefone" required />
+          </div>
+          <div class="profile-row">
+            <label for="editEmail" class="profile-label">E-mail*:</label>
+            <input type="email" id="editEmail" name="email" required />
+          </div>
+          <div class="profile-row">
+            <label for="editEndereco" class="profile-label">Endereço*:</label>
+            <input type="text" id="editEndereco" name="endereco" required />
+          </div>
+        </div>
+        <div class="profile-section">
+          <h3>Processos</h3>
+          <div class="profile-row">
+            <label for="editProcesso" class="profile-label">Link do Processo:</label>
+            <input type="url" id="editProcesso" name="processo" />
+          </div>
+        </div>
+        <div class="profile-section">
+          <h3>Anexar Documentos</h3>
+          <input type="file" id="editDocumentos" name="documentos" accept=".pdf,.jpg,.jpeg,.png" multiple />
+        </div>
+        <div class="profile-actions">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+          <button type="button" id="cancelEdit" class="btn">Cancelar</button>
+        </div>
+      </form>
     </div>
   </div>
 
