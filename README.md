@@ -30,6 +30,44 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 - Tipografia Merriweather/Montserrat
 - Totalmente responsivo para mobile
 
+### Menu e Agenda. (Alexandra de Paula)
+
+#### 🧽 Menu Principal
+- Interface de navegação com layout limpo e profissional  
+- Avatar da assistente virtual **Mia (IA)** no topo  
+- Ícones interativos para acesso aos módulos:
+  - Agenda
+  - Clientes
+  - Processos
+  - JusBrasil (site oficial)  
+- Campo de busca com ícone de filtro  
+- Posts organizados com redirecionamentos visuais
+
+#### 🗓️ Agenda Jurídica
+- Calendário interativo com visualização por mês  
+- Navegação entre meses com setas de controle  
+- Destaque visual para o **dia atual**  
+- Indicação de dias com atividades marcadas  
+- Modal para criação de nova atividade com campos:
+  - Título
+  - Horário  
+- Armazenamento de dados local via **localStorage**  
+- Filtro de atividades em tempo real
+
+#### 🔍 Busca de Atividades
+- Campo de pesquisa que filtra por título  
+- Resultados atualizados instantaneamente
+
+#### 🛠️ Ferramentas de Gerenciamento
+- Ícone intuitivo para adicionar novas tarefas  
+- Alternância de cores entre os cartões (vermelho/azul)  
+- Persistência das informações após recarregar a página  
+- Botões de navegação fixos na parte inferior do app
+
+#### 🎨 Styles
+- Paleta de cor (**#2B446C**)  
+- Tipografia moderna com **Montserrat**  
+- Layout responsivo, adaptado para mobile
 
 ## Tecnologias Utilizadas
 Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste projeto:
@@ -48,6 +86,8 @@ Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste p
 | Equipe     | Grupo | Integrante                                  | Matrícula   |
 |------------|--------|---------------------------------------------|-------------|
 | Engenharia de Software | D      | Adão Eduardo Gomes de Oliveira           | 2023010692 |
+| Engenharia de Software | D      | Alexandra Silva de Paula                 | 2023018832 |
+
 
 
 ### Agradecimentos
