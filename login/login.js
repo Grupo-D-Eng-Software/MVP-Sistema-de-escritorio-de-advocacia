@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Armazena o estado de login e redireciona
     sessionStorage.setItem('loggedIn', 'true');
     sessionStorage.setItem('userEmail', email);
-    window.location.href = 'menu/index.html';
+    window.location.href = '../menu/index.html';
   });
   
   // Validação do formulário de telefone
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Armazena o estado de login e redireciona
     sessionStorage.setItem('loggedIn', 'true');
     sessionStorage.setItem('userPhone', phoneDigits);
-    window.location.href = 'menu/index.html';
+    window.location.href = '../menu/index.html';
   });
   
   // Máscara para telefone
@@ -117,6 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Verifica se já está logado (evita mostrar login desnecessário)
   if (sessionStorage.getItem('loggedIn')) {
-    window.location.href = 'menu/index.html';
+    window.location.href = '../menu/index.html';
   }
 });
