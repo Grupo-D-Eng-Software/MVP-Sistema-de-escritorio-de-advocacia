@@ -14,31 +14,70 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 - Layout adaptável para mobile
 - Design consistente com o sistema existente
 
-### Cadastro de clientes. (Adão Eduardo)
+
+### Cadastro de Usuario (Jaine Bento) 
+
 #### 📝 Formulário Inteligente
-- Validação em tempo real de campos obrigatórios
-- Máscaras automáticas para CPF e telefone
-- Upload de múltiplos documentos (PDF/JPG/PNG)
 
-#### 🔍 Busca Avançada
-- Pesquisa por nome, CPF ou e-mail
-- Resultados instantâneos na tabela
-- Botão para limpar filtros
+- Validação em tempo real de campos obrigatórios (nome, CPF, OAB, e-mail, telefone, senha)
+- Máscaras automáticas para CPF, telefone e número da OAB
+- Campos específicos para nome social, gênero e áreas de atuação jurídica
 
-#### 📂 Gerenciamento de Documentos
-- Visualização em modal organizada
-- Download individual de arquivos
-- Exibição de tipo e tamanho dos documentos
+#### 🔍 Busca Avançada (a ser implementada na interface principal)
+
+- Pesquisas rápidas por nome, CPF, OAB ou e-mail
+- Resultados instantâneos exibidos em tabela
+- Filtro de múltiplas áreas de atuação com botão para limpar filtros
+
+#### ⚖️ Dados Profissionais Específicos
+
+- Cadastro completo da inscrição na OAB com identificação da seccional
+- Campo para informar a subseção da OAB e endereço profissional
 
 #### 🛠️ Ferramentas de Gestão
-- Exclusão segura com confirmação
-- Persistência de dados no navegador
-- Tabela responsiva e ordenável
 
-#### 🎨 Design
-- Cores profissionais (#3C4C6C como primária)
-- Tipografia Merriweather/Montserrat
-- Totalmente responsivo para mobile
+- Confirmação de exclusão de dados com segurança
+- Campos de senha com validação de mínimo de caracteres
+
+#### 🎨 Design Profissional
+
+- Paleta de cores sóbria e elegante (#3C4C6C como cor principal)
+- Tipografia combinando sofisticação (Merriweather nos títulos, Montserrat nos textos)
+- Layout responsivo e otimizado para dispositivos móveis e tablets
+
+### Recuperação de senha de login (Eudo)
+
+Essa funcionalidade permite ao usuário recuperar a senha se login. O processo de recuperação
+consiste em 3 etapas:
+
+#### Etapa 01:
+- O usuário insere seu E-mail de login;
+- No campo de E-mail ocorre (por JS) a validação do E-mail inserido 
+- Não foi implementado a validação para confirmar se o E-mail inserido esta no BD;
+- Após validação do E-mail, é enviado um código de 6 digitos para o Email (simulação);
+- O código pode ser visualizado no console do navegador.
+
+#### Etapa 02:
+- Com o código em mãos, o usuário deverar inseri-lo no campo com 6 inputs;
+- Ocorre validação nesses campos para confirmar se foram preenchidos;
+- Também ocorre validação para confirmar se o código inserido é igual ao enviado (console);
+- Após essas validações, o usuário é encaminhado para 3 página.
+
+#### Etapa 03:
+- Na etapa 3 ocorre o cadastro da nova senha;
+- O usuário deve seguir as orientações de senhas disponiveis na pagina;
+- Ocorre validação para verificação da tamanho da senha;
+- Ocorre validação para verificação das combinações de numeros, simbolos, e letras (A-z);
+
+#### Boas práticas:
+- Uso corretos das tags HTML;
+- Separação de HTML, CSS e JavaScript;
+- Link para o scrip em JS no final do Body;
+- Uso de branchs para cada funcionalidade implementadas;
+- Descrição clara de commits;
+- Validações de campos de inputs;
+- Mensagens de feedback para o usuário.
+
 
 ### Menu e Agenda. (Alexandra de Paula)
 
@@ -79,77 +118,54 @@ Este repositório contém o MVP (Produto Mínimo Viável) de um sistema desenvol
 - Tipografia moderna com **Montserrat**  
 - Layout responsivo, adaptado para mobile
 
-### Cadastro de Usuario (Jaine Bento) 
 
+### Cadastro de clientes. (Adão Eduardo)
 #### 📝 Formulário Inteligente
+- Validação em tempo real de campos obrigatórios
+- Máscaras automáticas para CPF e telefone
+- Upload de múltiplos documentos (PDF/JPG/PNG)
 
-- Validação em tempo real de campos obrigatórios (nome, CPF, OAB, e-mail, telefone, senha)
+#### 🔍 Busca Avançada
+- Pesquisa por nome, CPF ou e-mail
+- Resultados instantâneos na tabela
+- Botão para limpar filtros
 
-- Máscaras automáticas para CPF, telefone e número da OAB
-
-- Campos específicos para nome social, gênero e áreas de atuação jurídica
-
-#### 🔍 Busca Avançada (a ser implementada na interface principal)
-
-- Pesquisas rápidas por nome, CPF, OAB ou e-mail
-
-- Resultados instantâneos exibidos em tabela
-
-- Filtro de múltiplas áreas de atuação com botão para limpar filtros
-
-#### ⚖️ Dados Profissionais Específicos
-
-- Cadastro completo da inscrição na OAB com identificação da seccional
-
-- Campo para informar a subseção da OAB e endereço profissional
+#### 📂 Gerenciamento de Documentos
+- Visualização em modal organizada
+- Download individual de arquivos
+- Exibição de tipo e tamanho dos documentos
 
 #### 🛠️ Ferramentas de Gestão
+- Exclusão segura com confirmação
+- Persistência de dados no navegador
+- Tabela responsiva e ordenável
 
-- Confirmação de exclusão de dados com segurança
+#### 🎨 Design
+- Cores profissionais (#3C4C6C como primária)
+- Tipografia Merriweather/Montserrat
+- Totalmente responsivo para mobile
 
-- Campos de senha com validação de mínimo de caracteres
+### Perfil do Cliente (Rayane Amaro)
 
-#### 🎨 Design Profissional
+#### 👤 Visualização Detalhada
+- Exibição de todos os dados pessoais do cliente (nome, CPF, RG, nascimento)
+- Informações de contato (telefone, e-mail, endereço)
+- Link direto para o processo do cliente
 
-- Paleta de cores sóbria e elegante (#3C4C6C como cor principal)
+#### 📄 Documentos do Cliente
+- Listagem dos documentos anexados ao perfil
+- Download e visualização rápida dos arquivos
+- Exibição do tipo e tamanho de cada documento
 
-- Tipografia combinando sofisticação (Merriweather nos títulos, Montserrat nos textos)
+#### 🛠️ Ações no Perfil
+- Botão para editar dados do cliente
+- Atualização dos documentos anexados
+- Exclusão segura do perfil com confirmação
 
-- Layout responsivo e otimizado para dispositivos móveis e tablets
-
-### Recuperação de senha de login (Eudo)
-
-Essa funcionalidade permite ao usuário recuperar a senha se login. O processo de recuperação
-consiste em 3 etapas:
-
-#### Etapa 01:
-- O usuário insere seu E-mail de login;
-- No campo de E-mail ocorre (por JS) a validação do E-mail inserido 
-- Não foi implementado a validação para confirmar se o E-mail inserido esta no BD;
-- Após validação do E-mail, é enviado um código de 6 digitos para o Email (simulação);
-- O código pode ser visualizado no console do navegador.
-
-#### Etapa 02:
-- Com o código em mãos, o usuário deverar inseri-lo no campo com 6 inputs;
-- Ocorre validação nesses campos para confirmar se foram preenchidos;
-- Também ocorre validação para confirmar se o código inserido é igual ao enviado (console);
-- Após essas validações, o usuário é encaminhado para 3 página.
-
-#### Etapa 03:
-- Na etapa 3 ocorre o cadastro da nova senha;
-- O usuário deve seguir as orientações de senhas disponiveis na pagina;
-- Ocorre validação para verificação da tamanho da senha;
-- Ocorre validação para verificação das combinações de numeros, simbolos, e letras (A-z);
-
-#### Boas práticas:
-- Uso corretos das tags HTML;
-- Separação de HTML, CSS e JavaScript;
-- Link para o scrip em JS no final do Body;
-- Uso de branchs para cada funcionalidade implementadas;
-- Descrição clara de commits;
-- Validações de campos de inputs;
-- Mensagens de feedback para o usuário.
-
+#### 🎨 Design
+- Layout limpo e organizado, seguindo o padrão visual do sistema
+- Responsivo para dispositivos móveis
+- Ícone de voltar para o menu principal
 
 
 ## Tecnologias Utilizadas
@@ -173,6 +189,7 @@ Abaixo estão as tecnologias e ferramentas utilizadas no desenvolvimento deste p
 | Engenharia de Software | D      | Jaine Bento dos Santos                   | 2023009646 |
 | Engenharia de Software | D      | Antonio Harisson Alencar Ferreira        | 2023018770 |
 | Engenharia de Software | D      | Francisco Eudo da Silva                  | 2023011967 |
+| Engenharia de Software | D      | Rayane Amaro dos Santos                  | 2023010280 |
 
 
 ### Agradecimentos
